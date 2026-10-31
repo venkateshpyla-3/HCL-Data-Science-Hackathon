@@ -1,21 +1,67 @@
+
+# ==========================================
 # Python environments and caches
+# ==========================================
 hackathon_env/
 .venv/
 venv/
+env/
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
 
-# Secrets
+# ==========================================
+# Secrets and environment variables
+# ==========================================
 .env
 .env.*
 !.env.example
+.streamlit/secrets.toml
 
-# Keep generated artifacts out of Git
+# ==========================================
+# Jupyter Notebook temporary files
+# ==========================================
+.ipynb_checkpoints/
+
+# ==========================================
+# Operating system files
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# IDE and editor files
+# ==========================================
+.vscode/
+.idea/
+
+# ==========================================
+# Keep datasets and processed data
+# ==========================================
+# data/ is intentionally NOT ignored
+
+# ==========================================
+# Keep trained models
+# ==========================================
+# models/ is intentionally NOT ignored
+
+# ==========================================
+# Output files
+# Ignore other generated outputs but keep images
+# ==========================================
 outputs/*
 !outputs/.gitkeep
+!outputs/*.png
+!outputs/*.jpg
+!outputs/*.jpeg
+!outputs/*.webp
 
+# ==========================================
 # Keep folder placeholders
+# ==========================================
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 !models/.gitkeep
