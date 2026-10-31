@@ -11,14 +11,11 @@ __pycache__/
 .env.*
 !.env.example
 
-# Data and generated artifacts (keep large/private files out of Git)
-data/raw/*
-data/processed/*
-models/*
+# Keep generated artifacts out of Git
 outputs/*
+!outputs/.gitkeep
 
 # Keep folder placeholders
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 !models/.gitkeep
-!outputs/.gitkeep
